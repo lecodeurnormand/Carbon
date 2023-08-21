@@ -1,7 +1,7 @@
 @import '@/styles/common/global.scss';
 
 .main {
-  min-height: 100vh;
+  position: relative;
   .wrapper {
     @include styleGrid();
   }
@@ -10,6 +10,35 @@
     margin-bottom: 20px;
     h1 {
       @include styleH('h3', $color_2);
+    }
+  }
+  .obj1 {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    right: 100px;
+    top: 50px;
+    animation: move 5s infinite;
+    @keyframes move {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(10deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
+@media (width <= $breakPoint_tablet) {
+  .main {
+    .container_title {
+      margin-top: 50px;
+    }
+    .obj1 {
+      display: none;
     }
   }
 }
