@@ -1,4 +1,15 @@
 @import '@/styles/common/global.scss';
 
 .main {
+  min-height: 100vh;
+  .wrapper {
+    @include styleGrid();
+  }
+  .container_title {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    h1 {
+      @include styleH('h3', $color_2);
+    }
+  }
 }

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
+import Form from '@/components/Form'
 import styles from '@/styles/pages/Home.module.scss'
 
 export default function Home() {
@@ -11,7 +12,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <div className={styles.wrapper}>
+          <div className={styles.container_title}>
+            <h1>
+              Renseignez vos données afin d'obtenir votre empreinte carbone !
+            </h1>
+          </div>
+          <Form />
+        </div>
+      </main>
     </Layout>
   )
 }
