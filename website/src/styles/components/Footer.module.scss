@@ -1,0 +1,17 @@
+@import '@/styles/common/global.scss';
+
+.footer {
+  background: $color_2;
+  height: 50px;
+  .wrapper {
+    @include styleGrid();
+    .container_text {
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+      span {
+        @include styleP('small', $color_3);
+      }
+    }
+  }
+}
