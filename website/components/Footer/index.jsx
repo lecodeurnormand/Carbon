@@ -1,6 +1,4 @@
-import { useState, useEffect } from 'react'
-import styles from '@/styles/components/Footer.module.scss'
-import Link from 'next/link'
+import styles from './styles.module.scss'
 
 const Footer = () => {
   return (

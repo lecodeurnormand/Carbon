@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import styles from '@/styles/components/Form.module.scss'
+import styles from './styles.module.scss'
 
 const Form = () => {
   const [kilometers, setKilometers] = useState('')
