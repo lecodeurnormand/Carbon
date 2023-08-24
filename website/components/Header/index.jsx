@@ -5,14 +5,11 @@ import Link from 'next/link'
 const Header = () => {
   const [isScroll, setIsScroll] = useState(false)
   const handleScroll = () => {
-    const header = document.querySelector('header')
     const scrollPosition = window.scrollY
     if (scrollPosition > 1) {
       setIsScroll(true)
-      header.classList.add(styles.style_scroll)
     } else {
       setIsScroll(false)
-      header.classList.remove(styles.style_scroll)
     }
   }
   useEffect(() => {
